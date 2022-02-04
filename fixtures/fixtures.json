@@ -1,0 +1,63 @@
+[
+  {
+    "model": "channels.channel",
+    "pk": 1,
+    "fields": {
+      "title": "channel1",
+      "language": "en",
+      "picture": "fixtures/channel_pictures/channel1.jpeg"
+    }
+  },
+  {
+    "model": "channels.channel",
+    "pk": 2,
+    "fields": {
+      "title": "channel2",
+      "language": "tr",
+      "picture": "fixtures/channel_pictures/channel2.jpeg",
+      "parent_channel": 1
+    }
+  },
+  {
+    "model": "channels.channel",
+    "pk": 3,
+    "fields": {
+      "title": "channel3",
+      "language": "fr",
+      "picture": "fixtures/channel_pictures/channel3.jpeg",
+      "parent_channel": 2
+    }
+  },
+  {
+    "model": "channels.content",
+    "pk": 1,
+    "fields": {
+      "channel": 3,
+      "rating": 5.5
+    }
+  },
+  {
+    "model": "channels.video",
+    "pk": 1,
+    "fields": {
+      "movie_director": "director1",
+      "file": "fixtures/content_files/videos/video1.mp4"
+    }
+  },
+  {
+    "model": "channels.content",
+    "pk": 2,
+    "fields": {
+      "channel": 3,
+      "rating": 2.2
+    }
+  },
+  {
+    "model": "channels.pdf",
+    "pk": 2,
+    "fields": {
+      "author": "author1",
+       "file": "fixtures/content_files/pdfs/pdf1.pdf"
+    }
+  }
+]
